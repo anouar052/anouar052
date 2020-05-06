@@ -179,7 +179,10 @@ video {
   text-align: center;
   font-size: 2.35rem;
   padding: 1%;
+  margin: 2rem auto;
 }
+
+/*--footer section--*/
 
 .footer-menu {
   margin: auto;
