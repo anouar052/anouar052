@@ -13,6 +13,10 @@ html {
 body {
   background: black;
 }
+
+section {
+  margin: 10% auto;
+}
 h1 {
   font-size: 2rem;
 }
@@ -78,6 +82,7 @@ button {
 /* --Hero Section--*/
 
 .hero {
+  margin: auto auto;
   min-height: 80vh;
   width: 93%;
   display: flex;
@@ -136,11 +141,11 @@ h3 {
 
 /* --Tour Section--*/
 
-#video_box {
+video {
   margin: auto;
-  width: 80%;
+  display: block;
+  width: 70%;
 }
-
 /* --Menu Section--*/
 
 .menu-header {
