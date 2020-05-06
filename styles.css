@@ -33,7 +33,7 @@ p {
 }
 
 img {
-  background-size: cover;
+  width: 100%;
 }
 
 /* --Header--*/
@@ -136,11 +136,9 @@ h3 {
 
 /* --Tour Section--*/
 
-video {
-  display: block;
+#video_box {
   margin: auto;
-  width: 70%;
-  margin: 10% auto 10%;
+  width: 80%;
 }
 
 /* --Menu Section--*/
