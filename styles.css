@@ -198,10 +198,16 @@ video {
   opacity: 65%;
 }
 
+.footer-menu h1 {
+  width: 20%;
+}
+
 #logo-footer {
-  margin-left: -5%;
+  margin-left: -20%;
 }
 
 .made-by {
-  font-size: 2rem;
+  padding-top: 5% auto -10%;
+  font-size: 2rem;7
+  margin-top: -3rem;
 }
