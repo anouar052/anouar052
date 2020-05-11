@@ -8,14 +8,18 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   background: black;
 }
 
 section {
-  margin: 10% auto;
+  max-height: 100vh;
+  margin: 5% auto;
+  padding: 5% auto;
 }
 h1 {
   font-size: 2rem;
@@ -44,13 +48,16 @@ p {
 }
 
 header {
-  min-width: 150rem;
+  background: #000000;
   margin: auto;
-  max-width: 95%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 nav {
-  min-height: 10%;
+  min-height: 9%;
   display: flex;
   font-weight: 700;
 }
@@ -82,29 +89,42 @@ button {
 /* --Hero Section--*/
 
 .hero {
-  margin: auto auto;
-  min-height: 80vh;
+  padding: 5% 0 0;
+  align-self: center;
+  margin: auto;
   width: 93%;
   display: flex;
+  max-height: 150%;
+}
+
+.hero-imagecontain img {
+  width: 150%;
+  transform: translateX(-20%);
 }
 
 .hero-imagecontain,
 .hero-text {
+  padding: 5% 5% 0 8%;
+  width: 50%;
+  margin-top: -2%;
   flex: 1 1;
 }
 p {
+  max-height: 100%;
+  padding: 3rem 2rem;
   font-weight: 100;
   font-family: "work sans", sans-serif;
   text-align: center;
-  font-size: 2.8rem;
-  line-height: 6rem;
-  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  line-height: 4.5rem;
   letter-spacing: 0.22rem;
 }
 h2 {
-  margin-left: 4rem;
+  max-height: 20%;
+  margin-bottom: 7rem;
+  margin-left: 6rem;
   text-align: end;
-  font-size: 10rem;
+  font-size: 8rem;
 }
 
 span {
@@ -114,24 +134,29 @@ span {
 .scroll-down {
   display: block;
   margin: auto;
-  margin-bottom: 10rem;
+  animation: bounce 2s linear infinite;
 }
 
 /* --Live music & pool house Section--*/
-
+.live-music,
+.pool-house img {
+  height: auto;
+  max-width: 100%;
+  flex: 2 2;
+}
+.music-text,
+.pool-text {
+  flex: 1 1;
+}
 .live-music,
 .pool-house {
+  padding: 10% 0;
   margin: auto;
-  min-height: 80vh;
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  margin-bottom: 10rem;
-}
-
-.image-contain {
-  flex: 1;
+  margin-bottom: 8rem;
 }
 
 h3 {
@@ -142,12 +167,17 @@ h3 {
 /* --Tour Section--*/
 
 video {
+  padding: 5% 0;
   margin: auto;
   display: block;
   width: 70%;
 }
 /* --Menu Section--*/
 
+.menu {
+  height: 80%;
+  align-items: flex-end;
+}
 .menu-header {
   padding: 0 5%;
   margin: auto;
@@ -171,7 +201,7 @@ video {
 }
 .all-meals-container {
   margin-top: -5%;
-  margin-bottom: 10%;
+  margin-bottom: 6%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -182,32 +212,42 @@ video {
   text-align: center;
   font-size: 2.35rem;
   padding: 1%;
-  margin: 3rem auto;
+  margin: auto;
 }
 
 /*--footer section--*/
 
 .footer-menu {
-  margin: auto;
+  height: 10vh;
+  margin: 5% auto 4%;
+  padding-top: 5%;
   width: 90%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   font-family: "work sans", sans-serif;
   font-size: 3rem;
   opacity: 65%;
 }
 
-.footer-menu h1 {
-  width: 20%;
-}
-
 #logo-footer {
-  margin-left: -20%;
+  margin-left: -5%;
 }
 
 .made-by {
-  padding-top: 5% auto -10%;
-  font-size: 2rem;7
-  margin-top: -3rem;
+  margin-top: 4rem;
+  font-size: 2rem;
+  margin: auto;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }

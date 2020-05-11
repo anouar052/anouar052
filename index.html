@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width= device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
@@ -15,8 +15,8 @@
     <header class="main-header">
       <nav>
         <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#pool">Pool</a></li>
+          <li><div><a id="menuBtn" href="#menu" >Menu</a></li></div>
+          <li><div><a id="poolBtn" href="#pool" >Pool</a></div></li>
           <h1>
             <a href="#"
               ><img
@@ -25,7 +25,7 @@
                 alt="logo jazz'min"
             /></a>
           </h1>
-          <li><a href="#music">Live Music</a></li>
+          <li><div><a id="musicBtn" href="#music">Live Music</a></div></li>
           <li>
             <button id="order-online">Order <br />Online</button>
           </li>
@@ -33,21 +33,22 @@
       </nav>
     </header>
   <main>
-    <section class="hero">
-      <div class="hero-imagecontain">
-        <img src="./images/hero@2x.jpg" alt="bartender" />
-      </div>
-      <div class="hero-text">
-        <h2>Welcome to <br /><span>jazz'min</span></h2>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam.
-        </p>
-      </div>
+    <section class="heroMain">
+      <div class="hero" id="hero">
+        <div class="hero-imagecontain">
+          <img src="./images/hero@2x.jpg" alt="bartender" />
+        </div>
+        <div class="hero-text">
+            <h2>Welcome to <br /><span>jazz'min</span></h2>
+               <p>
+             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+             sed diam voluptua.Lorem ipsum dolor sit amet, consetetur sadipscing.
+               </p>
+         </div>
+        </div>
+      <img class="scroll-down" src="./images/Path 2@2x.png" alt="scroll-down" />
     </section>
-
-    <img class="scroll-down" src="./images/Path 2@2x.png" alt="scroll-down" />
 
     <section id="music" class="live-music">
       <div class="img-contain">
@@ -84,13 +85,13 @@
         <p>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea.
+          sed diam voluptua. At vero eos et accusam et justo duo dolores.
         </p>
       </div>
     </section>
 
     <section id="menu" class="menu">
-      <div class="menu-header">
+      <div class="menu-header" id="menuHeader">
         <h3>Different <span class="span-meals">Meals</span></h3>
         <h3>For</h3>
         <h3>Different <span class="span-tastes">tastes</span></h3>
@@ -116,15 +117,16 @@
           <a href="#"
             ><img
               id="logo-footer"
-              src="./images/Logo jazzmine@2x.png"
+              src="./images/Logo jazzmine-footer.png"
               alt="logo jazz'min"
           /></a>
         </h1>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Terms of Services</a></li>
       </ul>
-
-      <h3 class="made-by">Made By <span>Anouar</span></h3>
     </footer>
+ <h3 class="made-by">Made By <span>Anouar</span></h3>
+    
+   <!--<script src="./main.js"></script> --> 
   </body>
 </html>
